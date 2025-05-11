@@ -4,34 +4,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Outdoor Solar Lighting Oman | Alwejha Group</title>
-  <meta name="description" content="Enhance your outdoor spaces with Alwejha Group’s advanced outdoor solar lighting solutions in Oman. Reliable, eco-friendly, and designed for lasting performance.">
+  <meta name="description" content="Enhance your outdoor spaces with Alwejha Group’s advanced outdoor solar lighting solutions in Oman. Reliable, eco-friendly, and designed for lasting performance." />
   <meta name="robots" content="index, follow" />
-  <link rel="stylesheet" href="styles.css">
+  <link rel="canonical" href="https://outdoor-solar-lighting-oman.alwejhagroup.com/" />
+
+  <!-- Favicon: use the hero image -->
+  <link rel="icon" type="image/webp" href="https://outdoor-solar-lighting-oman.alwejhagroup.com/outdoor-solar-lighting-oman.webp" />
+
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
     }
+    /* Header & Hero */
     header {
-      background: url('outdoor-solar-lighting-oman.webp') center/cover no-repeat;
-      height: 70vh;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      position: relative;
       text-align: center;
+      color: white;
+    }
+    header img.hero {
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+      display: block;
+    }
+    header img.hero.fallback {
+      position: absolute;
+      top: 0; left: 0;
+      display: none;
     }
     header h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       background: rgba(0,0,0,0.5);
       padding: 20px;
       font-size: 2.5em;
+      margin: 0;
     }
+    /* Main content */
     section {
       padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    h2 {
+      margin-top: 0;
+    }
+    ul {
+      padding-left: 1.2em;
+    }
+    ul li {
+      margin-bottom: 8px;
     }
     .btn {
       display: inline-block;
@@ -42,16 +74,35 @@
       border-radius: 5px;
       margin-top: 30px;
     }
+    .btn:hover {
+      background: #0056b3;
+    }
+    /* Footer */
     footer {
       background: #222;
       color: #ddd;
       text-align: center;
       padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
+
   <header>
+    <!-- Primary hero image (WebP) -->
+    <img
+      class="hero"
+      src="https://outdoor-solar-lighting-oman.alwejhagroup.com/outdoor-solar-lighting-oman.webp"
+      alt="Outdoor Solar Lighting Oman"
+      onerror="this.style.display='none'; document.querySelector('img.hero.fallback').style.display='block';"
+    />
+    <!-- JPG fallback if WebP fails or is missing -->
+    <img
+      class="hero fallback"
+      src="https://outdoor-solar-lighting-oman.alwejhagroup.com/outdoor-solar-lighting-oman.jpg"
+      alt="Outdoor Solar Lighting Oman"
+    />
     <h1>Outdoor Solar Lighting Solutions in Oman</h1>
   </header>
 
@@ -67,7 +118,7 @@
       <li>✅ Long-lasting lithium battery systems</li>
     </ul>
 
-    <p>Whether you're illuminating pathways, parks, gardens, or parking lots, we offer modern solar lighting systems that are engineered for efficiency and reliability. Illuminate your outdoors with smart, sustainable lighting!</p>
+    <p>Whether you’re illuminating pathways, parks, gardens, or parking lots, we offer modern solar lighting systems that are engineered for efficiency and reliability. Illuminate your outdoors with smart, sustainable lighting!</p>
 
     <a href="https://www.alwejhagroup.com" class="btn">Visit Our New Website</a>
   </section>
@@ -75,5 +126,6 @@
   <footer>
     &copy; 2025 Alwejha Group. All rights reserved.
   </footer>
+
 </body>
 </html>
