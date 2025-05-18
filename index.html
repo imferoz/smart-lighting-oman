@@ -12,9 +12,9 @@
   <link rel="icon" href="/smart-lighting-oman.webp" type="image/webp">
   <style>
     :root {
-      --smart-blue: #0F52BA;
-      --iot-purple: #6A0DAD;
-      --energy-green: #4CAF50;
+      --factory-navy: #0F3460;
+      --maintenance-teal: #2D9596;
+      --alert-amber: #FFB84C;
       --dark-charcoal: #1A1A1A;
       --light-gray: #F0F3FF;
     }
@@ -28,7 +28,7 @@
     }
     
     header {
-      background: linear-gradient(135deg, var(--smart-blue), var(--iot-purple));
+      background: linear-gradient(135deg, var(--factory-navy), #14274E);
       color: white;
       padding: 120px 20px;
       text-align: center;
@@ -45,10 +45,10 @@
       height: 60px;
       background: repeating-linear-gradient(
         45deg,
-        var(--energy-green),
-        var(--energy-green) 15px,
-        white 15px,
-        white 30px
+        var(--maintenance-teal),
+        var(--maintenance-teal) 15px,
+        var(--alert-amber) 15px,
+        var(--alert-amber) 30px
       );
       opacity: 0.8;
     }
@@ -60,7 +60,7 @@
       letter-spacing: 1.5px;
     }
     
-    .tech-nav {
+    .industrial-nav {
       background: var(--dark-charcoal);
       box-shadow: 0 4px 20px rgba(0,0,0,0.2);
       padding: 0.8rem 0;
@@ -88,11 +88,11 @@
     }
     
     .nav-link:hover {
-      background: var(--energy-green);
+      background: var(--maintenance-teal);
       transform: translateY(-2px);
     }
     
-    .tech-container {
+    .factory-container {
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 20px;
@@ -107,35 +107,35 @@
       box-shadow: 0 20px 40px rgba(0,0,0,0.15);
     }
     
-    .solutions-grid {
+    .maintenance-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 2rem;
       margin: 4rem 0;
     }
     
-    .solution-panel {
+    .service-panel {
       background: white;
       border-radius: 8px;
       padding: 2rem;
-      border-left: 6px solid var(--smart-blue);
+      border-left: 6px solid var(--maintenance-teal);
       transition: transform 0.3s ease;
     }
     
-    .solution-panel:hover {
+    .service-panel:hover {
       transform: translateY(-5px);
     }
     
-    .automation-panel {
-      border-color: var(--iot-purple);
+    .emergency-panel {
+      border-color: var(--alert-amber);
     }
     
-    .energy-panel {
-      border-color: var(--energy-green);
+    .specialized-panel {
+      border-color: var(--factory-navy);
     }
     
     .cta-banner {
-      background: linear-gradient(135deg, var(--smart-blue), var(--iot-purple));
+      background: linear-gradient(135deg, var(--factory-navy), #203A43);
       color: white;
       padding: 4rem 2rem;
       margin: 4rem 0;
@@ -148,7 +148,7 @@
     .cta-button {
       display: inline-flex;
       align-items: center;
-      background: var(--energy-green);
+      background: var(--maintenance-teal);
       color: white;
       padding: 1rem 2rem;
       text-decoration: none;
@@ -159,8 +159,7 @@
     }
     
     .cta-button:hover {
-      background: white;
-      color: var(--smart-blue);
+      background: var(--alert-amber);
       box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
     
@@ -194,38 +193,38 @@
     <p>IoT-Enabled Lighting Control Systems with Automation</p>
   </header>
 
-  <nav class="tech-nav">
+  <nav class="industrial-nav">
     <div class="nav-container">
-      <a href="/" class="nav-link"><i class="fas fa-home"></i> Home</a>
-      <a href="/solutions" class="nav-link"><i class="fas fa-lightbulb"></i> Solutions</a>
-      <a href="/technology" class="nav-link"><i class="fas fa-microchip"></i> Technology</a>
-      <a href="/projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a>
-      <a href="/contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+      <a href="https://www.alwejhagroup.com/" class="nav-link"><i class="fas fa-factory"></i> Home</a>
+      <a href="https://www.alwejhagroup.com/area-of-expertise" class="nav-link"><i class="fas fa-cogs"></i> Expertise</a>
+      <a href="https://www.alwejhagroup.com/our-services" class="nav-link"><i class="fas fa-tools"></i> Services</a>
+      <a href="https://www.alwejhagroup.com/our-clients" class="nav-link"><i class="fas fa-industry"></i> Clients</a>
+      <a href="https://www.alwejhagroup.com/contact" class="nav-link"><i class="fas fa-hard-hat"></i> Contact</a>
     </div>
   </nav>
 
-  <main class="tech-container">
+  <main class="factory-container">
     <img class="hero-img" 
          src="/smart-lighting-hero.webp" 
          alt="Smart Lighting Control System in Oman"
          loading="eager">
 
     <section>
-      <h2><i class="fas fa-sliders-h" style="color: var(--smart-blue);"></i> Smart Lighting Solutions</h2>
+      <h2><i class="fas fa-conveyor-belt" style="color: var(--maintenance-teal);"></i> Smart Lighting Solutions</h2>
       
-      <div class="solutions-grid">
-        <div class="solution-panel">
-          <h3><i class="fas fa-mobile-alt" style="color: var(--smart-blue);"></i> Remote Control</h3>
+      <div class="maintenance-grid">
+        <div class="service-panel">
+          <h3><i class="fas fa-cog" style="color: var(--maintenance-teal);"></i> Control Systems</h3>
           <ul>
             <li>Smartphone/tablet control</li>
             <li>Voice command integration</li>
-            <li>Scheduled lighting programs</li>
+            <li>Automated scheduling</li>
             <li>Multi-user access</li>
           </ul>
         </div>
 
-        <div class="solution-panel automation-panel">
-          <h3><i class="fas fa-robot" style="color: var(--iot-purple);"></i> Automation</h3>
+        <div class="service-panel emergency-panel">
+          <h3><i class="fas fa-exclamation-triangle" style="color: var(--alert-amber);"></i> Automation</h3>
           <ul>
             <li>Motion-activated lighting</li>
             <li>Daylight harvesting</li>
@@ -234,8 +233,8 @@
           </ul>
         </div>
 
-        <div class="solution-panel energy-panel">
-          <h3><i class="fas fa-bolt" style="color: var(--energy-green);"></i> Energy Management</h3>
+        <div class="service-panel specialized-panel">
+          <h3><i class="fas fa-microscope" style="color: var(--factory-navy);"></i> Energy Management</h3>
           <ul>
             <li>Real-time usage monitoring</li>
             <li>Adaptive brightness</li>
@@ -250,13 +249,13 @@
       <h2>Transform Your Space with Intelligent Lighting</h2>
       <p>Experience the future of lighting control and energy efficiency</p>
       <div>
-        <a href="/contact" class="cta-button"><i class="fas fa-calendar-alt"></i> Request Demo</a>
-        <a href="/projects" class="cta-button"><i class="fas fa-images"></i> View Gallery</a>
+        <a href="https://www.alwejhagroup.com/contact" class="cta-button"><i class="fas fa-calendar-alt"></i> Schedule Consultation</a>
+        <a href="https://www.alwejhagroup.com/our-projects" class="cta-button"><i class="fas fa-chart-line"></i> View Case Studies</a>
       </div>
     </section>
 
-    <section style="background: rgba(74, 175, 80, 0.08); padding: 2.5rem; border-radius: 8px;">
-      <h2><i class="fas fa-certificate" style="color: var(--energy-green);"></i> Why Choose Our Smart Lighting?</h2>
+    <section style="background: rgba(45,149,150,0.08); padding: 2.5rem; border-radius: 8px;">
+      <h2><i class="fas fa-certificate" style="color: var(--maintenance-teal);"></i> Why Our Smart Lighting?</h2>
       <ul>
         <li>Certified IoT lighting specialists</li>
         <li>Open protocol systems (DALI, Zigbee)</li>
@@ -268,7 +267,7 @@
 
   <footer>
     <p>&copy; 2025 AL WEJHA GROUP | Smart Lighting Division</p>
-    <p>Illuminating Oman with Intelligent Solutions</p>
+    <p>Serving Commercial and Residential Clients Across Oman</p>
   </footer>
 </body>
 </html>
