@@ -1,4 +1,5 @@
 User-agent: *
-Allow: /
-Disallow: /draft/  # Block draft content
-Sitemap: http://smart-lighting-oman.alwejhagroup.com/sitemap.xml
+Disallow: /cdn-cgi/
+Allow: /hvac-systems/
+Allow: /cooling-solutions/
+Sitemap: https://smart-lighting-oman.alwejhagroup.com/sitemap.xml
